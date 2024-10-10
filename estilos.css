@@ -1,90 +1,57 @@
-body {
-    margin: 0;
-  }
-  
-  .contenedor {
-    height: 100vh;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+section{
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .tarjeta {
+    width: 100%;
+}
+
+
+.card{
+    display: grid;
+    justify-items: center;
+    margin-top: 50px;
+    width: 450px;
     height: 600px;
-    width: 400px;
-    background-color: blue;
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-   
-    background: radial-gradient(circle, rgba(3, 0, 0, 0) 0%, rgb(5, 5, 5) 100%);
-    position: relative;
-  }
-  .imagen{
-    height: 30px;
-    width: 30px;
-  }
-  .borde {
-    border: 1px solid gold;
-    padding: 20px;
-    border-radius: 10px;
-    height: 100%;
-    box-sizing: border-box;
-  }
-  
-  .encabezado {
-    
-    margin-bottom: 20px;
-  }
-  
-  .nombre {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    color: #b4950a;
-  }
-  
-  .texto {
-    
-    margin-top: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .truco {
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .rol {
-    font-size: 22px;
-  }
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px #ef93ff;
+}
 
+.card img{
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px goldenrod;
+    width: 60%;
+    border-radius: 50%;
+    object-fit: scale-down;
+}
 
-.search-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    background-color: #b4950a;
-    cursor: pointer;
-    margin-left: 10px;
+.card p{
+    text-align: center;
 }
-.searchbutton {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    background-color: #f9fbfc;
-    cursor: pointer;
-    margin-left: 40px;
-    
+
+.card p:nth-child(3){
+    color: grey;
+    margin-top: -60px;
+    font-size: 20px;
 }
-.search-button:hover {
-    background-color: #e0e0e0;
+
+.card p:nth-child(2){
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #e02fff;
 }
-.final{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    
+
+.card #boton{
+    color: #ffffff;
+    font-size: 30px;
+    width: 100%;
+    background-color: #e02fff;
+    text-align: center;
+    padding-top: 40px;
 }
