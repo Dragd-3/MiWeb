@@ -1,0 +1,21 @@
+.tarjeta {
+    background-color: rgb(90, 87, 87);
+    border: 1px solid ;
+    height: 500px;
+    width: 400px;
+    
+}
+
+.imagen {
+    background-color: rgb(20, 128, 190);
+    border: 1px ;
+    height: 200px;
+    width: 399px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.texto {
+ 
+    margin-top: 70px;
+}
