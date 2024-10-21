@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Cargar fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Galería Web</h1>
+        <input type="text" placeholder="Buscar imágenes...">
+   <!-- Contenedor para los botones -->
+   <div class="auth-buttons">
+    <button class="btn-registrarse">REGISTRARSE</button>
+    <button class="btn-iniciar-sesion">INICIAR SESIÓN</button>
+</div>
+    </header>
+
+    <!-- Galería de imágenes con diseño en cascada -->
+    <main>
+        <main>
+            <!-- Galería existente -->
+        
+            <!-- Carrusel de imágenes -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen4.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen5.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen6.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen7.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen8.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagenes/imagen9.jpg" alt="Imagen 3">
+                    </div>
+                    <!-- Añade más imágenes aquí según lo necesites -->
+                </div>
+                <!-- Botones de navegación opcionales -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </main>
+        
+        <div class="grid">
+            <div class="grid-item" onclick="showDescription('Arte de Vanquish Soul Ceasar Valius una carta de moustro del juego de cartas YuGiOh y carta principal del arquetipo derrota almas', 'imagenes/imagen1.jpg')">
+                <img src="imagenes/imagen1.jpg" alt="Imagen 1" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Portada del videojuego Super Smash Bros Ultimate de WII', 'imagenes/imagen2.jpg')">
+                <img src="imagenes/imagen2.jpg" alt="Imagen 2" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Imagen ilustrada de una nebulosa', 'imagenes/imagen3.jpg')">
+                <img src="imagenes/imagen3.jpg" alt="Imagen 3" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('imagen ilustraada de un agujero negro generada con inteligencia artificial', 'imagenes/imagen4.jpg')">
+                <img src="imagenes/imagen4.jpg" alt="Imagen 4" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Ilustracion de un control de la playStation 2 de sony', 'imagenes/imagen5.jpg')">
+                <img src="imagenes/imagen5.jpg" alt="Imagen 5" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('imagen de un escenario posapocaliptico del videjuego Halo 6 de Xbox', 'imagenes/imagen6.jpg')">
+                <img src="imagenes/imagen6.jpg" alt="Imagen 6" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Arte de la carta Divine Arsenal AA-ZEUS - Sky Thunder una carta de mounstro tipo xyz del juego YuGiOh', 'imagenes/imagen7.jpg')">
+                <img src="imagenes/imagen7.jpg" alt="Imagen 7" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('ilustracion de Dinomorphia Terizia encontrada en un la carta de trampa Dinomorphia Intact de YuGiOh', 'imagenes/imagen8.jpg')">
+                <img src="imagenes/imagen8.jpg" alt="Imagen 8">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Descripción de la Imagen no disponible', 'imagenes/imagen9.jpg')">
+                <img src="imagenes/imagen9.jpg" alt="Imagen 9">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Ilustracion de la carta Dinomorphia Kentregina un mostruo de fusion del juego YuGiOh', 'imagenes/imagen10.jpg')">
+                <img src="imagenes/imagen10.jpg" alt="Imagen 10" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('imagen ilustrada de una ciudad desavitada luego del paso de los años', 'imagenes/imagen11.jpg')">
+                <img src="imagenes/imagen11.jpg" alt="Imagen 11" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Arte de Vanquish Soul Razen una carta de moustro del juego de cartas YuGiOh perteneciente al arquetipo derrota almas ', 'imagenes/imagen12.jpg')">
+                <img src="imagenes/imagen12.jpg" alt="Imagen 12" loading="lazy">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Arte de Vanquish Soul Calamity Ceasar una carta de trampa del juego de cartas YuGiOh donde se ve a Ceasar Valius lanzando un poderoso ataque', 'imagenes/imagen13.jpg')">
+                <img src="imagenes/imagen13.jpg" alt="Imagen 13">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Dark Magician el mas grande entre los magos en cuanto ataque y defensa', 'imagenes/imagen14.jpg')">
+                <img src="imagenes/imagen14.jpg" alt="Imagen 14">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('imagen de una ciudad futurista', 'imagenes/imagen15.jpg')">
+                <img src="imagenes/imagen15.jpg" alt="Imagen 15">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showDescription('Campo de arboles y flores violetas ilumidados por las luz del sol a medio dia', 'imagenes/imagen16.jpg')">
+                <img src="imagenes/imagen16.jpg" alt="Imagen 16">
+                <div class="overlay">
+                    <button onclick="likeImage(this)">Me gusta (<span class="like-count">0</span>)</button>
+                    <button onclick="saveImage()">Guardar</button>
+                    <button onclick="shareImage()">Compartir</button>
+                </div>
+            </div>
+            <!-- Agrega más imágenes aquí -->
+        </div>
+
+        <!-- Modal para mostrar imagen y descripción -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Imagen Modal">
+            <div id="modalDescription" class="modal-description"></div>
+        </div>
+    </main>
+
+    <!-- Sección con parallax -->
+    <div class="parallax"></div>
+
+    <footer>
+        <p>&copy; 2024 Galería Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
